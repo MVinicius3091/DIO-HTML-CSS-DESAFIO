@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Project</title>
+  </head>
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
+  <body>
+    <h1 id="inicio">Desafio-DIO</h1>
+    <hr />
+
+    <ul>
+      <li><a href="#html">O que é o HTML?</a></li>
+      <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+      <li><a href="#semanticas">Tags semânticas</a></li>
+    </ul>
+
+    <hr>
+    <h2 id="html">O que é o HTML</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+      A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador
+      que compõe a maior parte das páginas da internet e dos aplicativos online.
+      Um hipertexto é um texto usado para fazer referência a outros textos,
+      enquanto uma linguagem de marcação é composta por uma série de marcações
+      que dizem para os servidores da web qual é o estilo e a estrutura de um
+      documento. O HTML não é considerado uma linguagem de programação, já que
+      ele não pode criar funcionalidades dinâmicas. Ao invés disso, com o HTML,
+      os usuários podem criar e estruturar seções, parágrafos e links usando
+      elementos, tags e atributos.
+    </p>
+
+    <hr>
+    <h2 id="estrutura">Estrutura básica do HTML</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+      O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável. Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código. Geralmente os editores como o Sublime Text já tem atalhos para iniciar os documentos HTMLs com essa estrutura, logo, você não precisa se preocupar em decorá-la, mas é bom que faça.
+
+      <p>  
+        É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:
+      </p>
+        
+      <ul>
+        <li>Definição do documento (doctype)</li>
+        <li>Cabeça (head)</li>
+        <li>Corpo (body))</li>
+      </ul>
+
+      <h3>Doctype - Definindo o documento</h3>
+      <p>
+        Uma coisa importante: SEMPRE deve existir o doctype, que é este código <code>&lt;!DOCTYPE html&gt;.</code>
+      </p>
+  
+      <p>
+        O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma possível. Lembre-se: o doctype é OBRIGATÓRIO e deve ser sempre a PRIMEIRA LINHA do seu documento.
+      </p>
+        
+      <h3>HEAD</h3>
+      <p>
+        Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag head.
+      </p>
+
+      <h3>BODY</h3>
+      <p>
+        Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados (formulários) também se aplica neste seção do documento. Na prática, o corpo do documento é delimitado pelo par de tags <code>&lt;body&gt;</code> e <code>&lt;/body&gt;</code>.
+      </p>
+        
+      <p>
+        Este é o preceito básico que deve estar muito bem claro para você: onde as marcações se aplicam, e quais são os resultados deste modelo. Por exemplo: se vocês deseja informar conteúdo textual para saída legível ao usuário do seu sistema web, esta marcação deverá obrigatoriamente estar no bloco do corpo da página. Ainda: para definir qual o tipo de codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar marcada no cabeçalho do mesmo documento.
+      </p>
+
+      <p>
+        Dentro do elemento BODY sua estrutura de página terá os elementos semânticos da construção da sua página, onde serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc.
+      </p>
+    </p>
+
+    <hr>
+    <h2 id="semanticas">Tags semânticas</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+      Elementos semânticos do HTML5 são aqueles que descrevem claramente seu
+      significado de uma maneira que seja legível tanto para humanos quanto para
+      máquinas. Elementos como <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> e
+      <code>&lt;article&gt;</code> (cabeçalho, rodapé e artigo, respectivamente,
+      traduzidos para o português) são considerados semânticos, pois eles
+      descrevem com precisão o propósito do elemento e o tipo de conteúdo dentro
+      dele.
+    </p>
+
+
+    <h2>O que são elementos semânticos?</h2>
+    <p>
+      O HTML foi originalmente criado como uma linguagem de marcação para descrever documentos no início da internet. Conforme a internet cresceu e foi sendo adotada por cada vez mais pessoas, algumas mudanças precisaram acontecer.
+      
+      A internet, que foi originalmente pensada para compartilhamento de artigos científicos, agora se tornou um local onde as pessoas querem compartilhar outras coisas também. Rapidamente, elas começaram a querer fazer com que a Web fosse mais atrativa visualmente.
+
+      Devido à web não ser ter sido inicialmente construída pensando em design, os programadores usaram alguns truques diferentes para arrumar tudo de diversas maneiras. Ao invés de usar a tag <code>&lt;table&gt;&lt;/table&gt;</code> (tabela, em inglês) para descrever informações usando uma tabela, programadores a usavam para posicionar outros elementos dentro de uma página.
+
+      Conforme as interfaces progrediram visualmente, os programadores começaram a usar tags genéricas e não semânticas como <code>&lt;div&gt;</code> (divisão, em inglês). Eles costumavam dar a esses elementos atributos de classe (class) ou id que descrevessem seu propósito. Por exemplo, ao invés de <header> era comumente escrito algo como <code>&lt; div class="header"&gt;</code>
+    
+      Como o HTML5 é algo ainda relativamente novo, esse uso de elementos não semânticos ainda é muito comum em websites atualmente.
+    </p>
+
+    <details>
+      <summary>Fontes</summary>
+      <ul>
+        <li>
+          <a href="https://www.freecodecamp.org/portuguese/news/elementos-semanticos-do-html5-explicados/">Freecodecamp</a>
+        </li>
+        
+        <li>
+          <a href="https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos">Hostinger</a>
+        </li>
+
+        <li>
+          <a href="https://tableless.github.io/iniciantes/manual/html/estruturabasica.html">Tableless</a>
+        </li>
+      </ul>
+    </details>
+    <br>
+</body>
+</html>
